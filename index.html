@@ -1,0 +1,50 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="cabeca">
+    <img src="imgs/Logo.svg" alt="Logo">
+  </header>
+
+  <div class="main-content">
+    <div class="orange-section">
+      <img src="imgs/imagens.gif" alt="fotos">
+      <div class="content2">
+        <p>O projeto que facilita a voz do cidadão</p>
+
+        <div class="button">
+          <a onclick="showPopup()">Iniciar Tour</a>
+        </div>
+
+        <div class="popup" id="popup">
+          <div class="popup-content">
+            <p class="titulo_popup"> Atenção! </p>
+            <p class="texto_popup"> Nosso app é um protótipo para testar a navegabilidade e utilidade, não há inserção de dados reais, não pedimos quaisquer informações ou termos reais.</p>
+            <a href="src\pages\figma\figma.html" onclick="closePopup()">Compreendo e desejo continuar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="gray-section">
+      <p><a id="revealButton">Saiba mais</a></p>
+    </div>
+    <div class="div-texto" id="hiddenContent">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam nostrum voluptate delectus, architecto, sit recusandae error non illum corrupti ut quaerat adipisci sunt quae tempora ipsum necessitatibus laudantium optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus autem corrupti sunt illo nobis blanditiis cupiditate dolorum accusamus, tempora temporibus unde ipsum, numquam explicabo veniam ducimus delectus culpa! Eaque, numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, natus saepe quas possimus quia veritatis quam rem ex minus amet et ipsum illo quibusdam cum magnam impedit debitis. Incidunt, expedita!</p>
+    </div>
+    
+  </div>
+
+  <script src="popup.js"></script>
+  <script src="texto.js"></script>
+</body>
+
+</html>
