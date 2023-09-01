@@ -48,6 +48,7 @@ body {
   flex: 1; /* Allow the content to take the remaining available space */
   padding-left: 20px; /* Add padding to separate content from image */
   justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -76,6 +77,7 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  text-align: center;
 }
 
 .popup {
@@ -99,10 +101,24 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.popup-content p {
-  text-align: center; /* Centralizando o texto */
-  font-weight: bold; /* Aplicando negrito ao texto */
-  margin-bottom: 10px; /* Espaçamento inferior */
+.titulo-popup{
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+
+.texto-popup{
+  text-align: center;
+  font-size: 20px;
+}
+
+.banner-title{
+  font-weight: bold;
+  text-align: right;
+  margin-right: 10%;
+  font-size: 40px;
+  color: white;
+  font-family: 	Times New Roman;
 }
 
 .popup button {

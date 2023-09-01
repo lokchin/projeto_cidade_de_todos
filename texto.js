@@ -6,16 +6,26 @@ document.addEventListener("DOMContentLoaded", function() {
   // Inicialmente, ocultar o conteúdo oculto
   hiddenContent.style.display = "none";
 
+  var reveal = false;
   revealButton.addEventListener("click", function(event) {
-    event.preventDefault();
+    if(!reveal){
+      event.preventDefault();
     
-    // Mostrar o conteúdo oculto
-    hiddenContent.style.display = "block";
+      // Mostrar o conteúdo oculto
+      hiddenContent.style.display = "block";
 
-    // Scroll suave para revelar o conteúdo oculto
-    hiddenContent.scrollIntoView({ behavior: 'smooth' });
+      // Scroll suave para revelar o conteúdo oculto
+      hiddenContent.scrollIntoView({ behavior: 'smooth' });
 
-    // Desbloquear o scroll
-    document.body.style.overflow = "auto";
+      // Desbloquear o scroll
+      document.body.style.overflow = "auto";
+
+      reveal = true;
+    }
+    else{
+      hiddenContent.style.display = "none";
+
+      reveal = false;
+    }
   });
 });
