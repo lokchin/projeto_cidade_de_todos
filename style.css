@@ -1,5 +1,6 @@
 /* Styles.css */
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -10,7 +11,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: #CFCFCF;
   display: flex;
-  flex-direction: column; /* Ensure the body becomes a flex container */
+  flex-direction: column;
+  /* Ensure the body becomes a flex container */
 }
 
 .cabeca {
@@ -24,29 +26,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1; /* Allow main-content to take the remaining vertical space */
+  flex: 1;
+  /* Allow main-content to take the remaining vertical space */
 }
 
 .orange-section {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the content horizontally */
+  justify-content: center;
+  /* Center the content horizontally */
   background-color: #EA9937;
   width: 100%;
-  flex: 1; /* Allow orange-section to take the remaining vertical space */
+  flex: 1;
+  /* Allow orange-section to take the remaining vertical space */
 }
 
 .orange-section img {
   max-width: 50%;
-  height: 100%; /* Make the image cover the full height of the orange section */
-  object-fit: cover; /* Maintain aspect ratio while covering the container */
-  object-position: center bottom; /* Position the image at the bottom while keeping it centered horizontally */
+  height: 100%;
+  /* Make the image cover the full height of the orange section */
+  object-fit: cover;
+  /* Maintain aspect ratio while covering the container */
+  object-position: center bottom;
+  /* Position the image at the bottom while keeping it centered horizontally */
   padding-right: 20px;
 }
 
 .content2 {
-  flex: 1; /* Allow the content to take the remaining available space */
-  padding-left: 20px; /* Add padding to separate content from image */
+  flex: 1;
+  /* Allow the content to take the remaining available space */
+  padding-left: 20px;
+  /* Add padding to separate content from image */
   justify-content: center;
   align-items: center;
 }
@@ -54,6 +64,7 @@ body {
 .button {
   display: flex;
   margin-top: 20px;
+  margin-bottom: 15px;
   justify-content: center;
 }
 
@@ -65,10 +76,19 @@ body {
 
 .div-texto {
   background-color: #A6A6A6;
-  text-align: left;
+  text-align: center;
+  font-size: 16px;
   width: 100%;
 }
 
+.dt-texto {
+  font-size: 16px;
+  text-align: center;
+}
+.dt-titulo {
+  font-weight: bold;
+  font-size: 20px;
+}
 
 .button a {
   display: inline-block;
@@ -93,32 +113,36 @@ body {
 }
 
 .popup-content {
-  background-color: #D9D9D9; /* Alterando a cor de fundo para D9D9D9 */
-  width: 70%; /* Definindo a largura do pop-up */
-  max-width: 400px; /* Limitando a largura máxima */
+  background-color: #D9D9D9;
+  /* Alterando a cor de fundo para D9D9D9 */
+  width: 70%;
+  /* Definindo a largura do pop-up */
+  max-width: 400px;
+  /* Limitando a largura máxima */
   padding: 20px;
-  border-radius: 10px; /* Borda arredondada para o retângulo */
+  border-radius: 10px;
+  /* Borda arredondada para o retângulo */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.titulo-popup{
+.titulo-popup {
   font-weight: bold;
   text-align: center;
   font-size: 20px;
 }
 
-.texto-popup{
+.texto-popup {
   text-align: center;
   font-size: 20px;
 }
 
-.banner-title{
+.banner-title {
   font-weight: bold;
   text-align: right;
   margin-right: 10%;
   font-size: 40px;
   color: white;
-  font-family: 	Times New Roman;
+  font-family: Times New Roman;
 }
 
 .popup button {
